@@ -1,5 +1,6 @@
 # Morse
 Team Dot Dash: Morse Code Translator
+
 Team 2 Members: Ezan Khan, Keimaree Smith, Jonathan Thea, Tadiwanashe Zinyongo
 
 We are developing a Morse code translator that allows users to input dots and dashes via push buttons on an FPGA to output letters and numbers.
