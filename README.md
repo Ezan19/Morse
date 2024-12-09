@@ -1,5 +1,5 @@
 # Morse
-Team Dot Dash: Morse Code Translator
+**Team Dot Dash: Morse Code Translator**
 Team 2 Members: Ezan Khan, Keimaree Smith, Jonathan Thea, Tadiwanashe Zinyongo
 
 Watch our demo video here: Lorem ipsum
