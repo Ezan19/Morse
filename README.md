@@ -19,12 +19,11 @@ FPGA Display: The 7-segment display will show up to 8 characters in sequence.
 Computer Monitor: The most recent character will be displayed with indexed positioning to indicate its place in the sequence.
 
 **Hardware Requirements**
-1. 5 input buttons for dot, dash, clear, delete, and enter.
+1. Five input buttons for dot, dash, clear, delete, and enter.
 2. Two 4-character 7-segment displays on the FPGA.
 3. A monitor connected to the FPGA. 
 
 **Software Modules**
-To implement this project, we will utilize the following modules:
 1. Debouncer: Processes input from the 5 buttons.
 2. Morse Encoder: Tracks input position and stores the sequence.
 3. Morse Decoder: Converts the sequence into characters for the 7-segment display.
