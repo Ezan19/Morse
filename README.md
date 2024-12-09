@@ -1,16 +1,39 @@
 # Morse
-Team Dot Dash: Morse Code Translator
-
+**Team Dot Dash: Morse Code Translator**
 Team 2 Members: Ezan Khan, Keimaree Smith, Jonathan Thea, Tadiwanashe Zinyongo
 
-We are developing a Morse code translator that allows users to input dots and dashes via push buttons on an FPGA to output letters and numbers.
+Watch our demo video here: Lorem ipsum
 
-The user will have the following 5 input buttons on the FPGA where the: left button inputs a dot, center button inputs a dash, top button clears all characters, bottom button deletes one character, right button inputs our sequence of dots & dashes. 
+We have designed a Morse code translator that allows users to input dots and dashes using push buttons on an FPGA. The translated letters and numbers are displayed on both the FPGA’s 7-segment display and a connected computer monitor.
 
-The output will be displayed on our FPGAs 7 segment display.
+**User Inputs**
+The FPGA will feature five input buttons:
+1. Left Button: Inputs a dot.
+2. Center Button: Inputs a dash.
+3. Top Button: Clears all characters.
+4. Bottom Button: Deletes the last character.
+5. Right Button: Confirms the sequence of dots and dashes for translation.
 
-On the FPGA/hardware side, we will need: 5 buttons (dot, dash, clear, delete, enter) and an eight character 7-segment display
+**Outputs**
+FPGA Display: The 7-segment display will show up to 8 characters in sequence.
+Computer Monitor: The most recent character will be displayed with indexed positioning to indicate its place in the sequence.
 
-On the Verilog/software side, we will need: Debouncer (5 button inputs), Morse Encoder (store position & input seq), Morse Decoder (turn seq into character), and FSM (output characters to 7-seg display).
+**Hardware Requirements**
+1. 5 input buttons for dot, dash, clear, delete, and enter.
+2. Two 4-character 7-segment displays on the FPGA.
+3. A monitor connected to the FPGA. 
 
-Presentation View: https://docs.google.com/presentation/d/15q4PTmuv1oU9G7g7d1FIshKvqw2tgNeB3cpf65LR72M/edit?usp=sharing 
+**Software Modules**
+To implement this project, we will utilize the following modules:
+1. Debouncer: Processes input from the 5 buttons.
+2. Morse Encoder: Tracks input position and stores the sequence.
+3. Morse Decoder: Converts the sequence into characters for the 7-segment display.
+4. FSM (Finite State Machine): Manages character output to the 7-segment display.
+5. Clock Divider: Synchronizes the VGA refresh rate.
+6. ASCII_ROM: Converts input sequence into ASCII characters for VGA display.
+7. Last Letter: Handles character positioning for the VGA output.
+8. VGA Controller: Outputs characters to the monitor.
+9. VGA_Top: Serves as the top module, integrating all other modules.
+
+**How to Run Our Project**
+1. Lorem ipsum
