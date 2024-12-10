@@ -3,27 +3,27 @@
 
 module morse_encoder(
     input clk,               
-    input Left_dot,                // Button for dot
-    input Mid_dash,                // Button for dash
-    input Right_enter,                // Button for Enter (moves position)
-    input Top_reset,                // Button for reset (clear all)
-    input Bot_back,                // Button to undo last character
+    input Left_dot, // Button for dot
+    input Mid_dash, // Button for dash
+    input Right_enter, // Button for Enter (moves position)
+    input Top_reset, // Button for reset (clear all)
+    input Bot_back, // Button to undo last character
     output reg [39:0] final_seq_of_in, // 40-bit output for the stored Morse code sequence
-    output reg [23:0] final_num_of_in,     // 24-bit output for the corresponding bit representation
-    output reg [2:0] char_pos_out          //outputs 3-bits for last position
+    output reg [23:0] final_num_of_in, // 24-bit output for the corresponding bit representation
+    output reg [2:0] char_pos_out // outputs 3-bits for last position
 );
 
     
     reg [4:0] temp_seq;    
     reg [2:0] seq_index;             
-    reg [2:0] temp_num;      // Counter for the number of dots/dashes in the current sequence
+    reg [2:0] temp_num; // Counter for the number of dots/dashes in the current sequence
 
     reg [39:0] seq_of_in;           
     reg [23:0] num_of_in;      
 
-    reg [2:0] char_position;       // Counter for determining which "slot" we are storing the sequence in
+    reg [2:0] char_position; // Counter for determining which "slot" we are storing the sequence in
 
-    reg old_Left_dot, old_Mid_dash, old_Right_enter, old_Top_reset, old_Bot_back;   // Previous state 
+    reg old_Left_dot, old_Mid_dash, old_Right_enter, old_Top_reset, old_Bot_back; // Previous state 
 
     //Establish 0 to begin with
     initial begin
