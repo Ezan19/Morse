@@ -21,7 +21,14 @@ The FPGA will feature five input buttons:
 2. Computer Monitor: The most recent character will be displayed with indexed positioning to indicate its place in the sequence.
 
 **How to Run Our Project**
-1. Lorem ipsum
+1. Doownload all necessary files (inside the modules and constraints folders) from the GitHub repository.
+2. Launch the Vivado Design Suite
+3. Create a new project and add the downloaded project files
+5. Configure your FPGA settings (we used the Nexys A7 FGPA with part description xc7a100tcsg324-1)
+6. Under Design Sources, set vga_top as the top module.
+7. Generate Bitstream
+8. Program the FPGA with Hardward Manager
+9. Enjoy!
 
 **Hardware Requirements**
 1. Five input buttons for dot, dash, clear, delete, and enter.
