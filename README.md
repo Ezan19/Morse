@@ -3,7 +3,7 @@
 
 Team 2 Members: Ezan Khan, Keimaree Smith, Jonathan Thea, Tadiwanashe Zinyongo
 
-[Watch our demo video here]([url](https://drive.google.com/drive/folders/1Q7Zs4-CcZHwQAgSJzG47LIRKQwQYq2iu?usp=sharing))
+Watch our demo video here: https://drive.google.com/drive/folders/1Q7Zs4-CcZHwQAgSJzG47LIRKQwQYq2iu?usp=sharing
 
 We have designed a Morse code translator that allows users to input dots and dashes using push buttons on an FPGA. The translated letters and numbers are displayed on both the FPGA’s 7-segment display and a connected computer monitor through vga.
 
