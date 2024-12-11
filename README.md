@@ -3,11 +3,12 @@
 
 Team 2 Members: Ezan Khan, Keimaree Smith, Jonathan Thea, Tadiwanashe Zinyongo
 
-Watch our demo video here: Lorem ipsum
+[Watch our demo video here]([url](https://drive.google.com/drive/folders/1Q7Zs4-CcZHwQAgSJzG47LIRKQwQYq2iu?usp=sharing))
 
-We have designed a Morse code translator that allows users to input dots and dashes using push buttons on an FPGA. The translated letters and numbers are displayed on both the FPGA’s 7-segment display and a connected computer monitor.
+We have designed a Morse code translator that allows users to input dots and dashes using push buttons on an FPGA. The translated letters and numbers are displayed on both the FPGA’s 7-segment display and a connected computer monitor through vga.
 
 **User Inputs**
+
 The FPGA will feature five input buttons:
 1. Left Button: Inputs a dot.
 2. Center Button: Inputs a dash.
@@ -16,8 +17,11 @@ The FPGA will feature five input buttons:
 5. Right Button: Confirms the sequence of dots and dashes for translation.
 
 **Outputs**
-FPGA Display: The 7-segment display will show up to 8 characters in sequence.
-Computer Monitor: The most recent character will be displayed with indexed positioning to indicate its place in the sequence.
+1. FPGA Display: The 7-segment display will show up to 8 characters in sequence.
+2. Computer Monitor: The most recent character will be displayed with indexed positioning to indicate its place in the sequence.
+
+**How to Run Our Project**
+1. Lorem ipsum
 
 **Hardware Requirements**
 1. Five input buttons for dot, dash, clear, delete, and enter.
@@ -34,6 +38,3 @@ Computer Monitor: The most recent character will be displayed with indexed posit
 7. Last Letter: Handles character positioning for the VGA output.
 8. VGA Controller: Outputs characters to the monitor.
 9. VGA_Top: Serves as the top module, integrating all other modules.
-
-**How to Run Our Project**
-1. Lorem ipsum
